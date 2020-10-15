@@ -28,6 +28,7 @@ import java.util.Optional;
  */
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(allowedHeaders = "*")  // Dev only
 public class AirQualityApi {
     private final Logger log = LoggerFactory.getLogger(AirQualityApi.class);
 
